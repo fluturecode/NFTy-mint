@@ -1,27 +1,6 @@
-.main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
+.container {
+  background: #1f1f1f;
 }
-
-.description {
-  display: inherit;
-  justify-content: inherit;
-  align-items: inherit;
-  font-size: 0.85rem;
-  max-width: var(--max-width);
-  width: 100%;
-  z-index: 2;
-  font-family: var(--font-mono);
+.wallet-adapter-button-trigger {
+  background-color: #833bbe;
 }
-
-.description a {
-  .container {
-    background: #1F1F1F;
-  }
-  .wallet-adapter-button-trigger {
-    background-color: #833BBE;
-  }
