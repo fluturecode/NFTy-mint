@@ -2,6 +2,7 @@ import { Box, Center, Spacer, Stack } from "@chakra-ui/react"
 import type { NextPage } from "next"
 import Head from "next/head"
 import styles from "../styles/Home.module.css"
+import NavBar from "../components/NavBar"
 
 const Home: NextPage = () => {
 
@@ -20,7 +21,7 @@ const Home: NextPage = () => {
         backgroundPosition="center"
       >
         <Stack w="full" h="calc(100vh)" justify="center">
-					{ /* NavBar */ }
+					<NavBar />
 
           <Spacer />
           <Center>
