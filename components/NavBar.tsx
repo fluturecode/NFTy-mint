@@ -13,7 +13,7 @@ const NavBar: FC = () => {
   return (
     <HStack width="full" padding={4}>
       <Spacer />
-			<WalletMultiButtonDynamic className={styles["wallet-adapter-button-trigger"]}/>
+		<WalletMultiButtonDynamic className={styles["wallet-adapter-button-trigger"]}/>
     </HStack>
   )
 }
