@@ -20,6 +20,7 @@ const Disconnected: FC = () => {
       if (event.defaultPrevented) {
         return
       }
+
       if (!wallet) {
         modalState.setVisible(true)
       } else {
@@ -28,7 +29,7 @@ const Disconnected: FC = () => {
     },
     [wallet, connect, modalState]
   )
-
+  
   return (
     <Container>
       <VStack spacing={20}>
