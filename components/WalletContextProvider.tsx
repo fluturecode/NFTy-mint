@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { FC, ReactNode } from "react"
 import {
   ConnectionProvider,
@@ -13,7 +14,7 @@ require("@solana/wallet-adapter-react-ui/styles.css")
 const WalletContextProvider: FC<{ children: ReactNode }> = ({ children }) => {
   const network = WalletAdapterNetwork.Devnet;
 
-  const endpoint = useMemo(() => clusterApiUrl("devnet"), [...network])
+  const endpoint = useMemo(() => clusterApiUrl("devnet"), [network])
 
   const wallets = useMemo(
     () => [new PhantomWalletAdapter()],
